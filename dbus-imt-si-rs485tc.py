@@ -1,7 +1,7 @@
 #!/usr/bin/python -u
 # coding=utf-8
 from time import sleep
-from velib_python.ve_dbus_service_async import VeDbusServiceAsync
+from ve_dbus_service_async import VeDbusServiceAsync
 from imt_si_rs485_sensor import ImtSiRs485Sensor
 from watchdog import Watchdog
 from signals import DbusSignal, ModbusSignal

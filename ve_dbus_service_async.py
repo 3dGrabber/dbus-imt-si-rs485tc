@@ -5,7 +5,11 @@ import dbus
 from dbus.mainloop.glib import DBusGMainLoop
 from signals import DbusSignal
 from os import environ
+from os.path import dirname, join
+from sys import path
 
+path.insert(1, join(dirname(__file__), 'ext', 'velib_python'))
+# noinspection PyUnresolvedReferences
 from vedbus import VeDbusService
 from logging import getLogger
 

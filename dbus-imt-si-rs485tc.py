@@ -15,8 +15,8 @@ logging.basicConfig(level=c.LOG_LEVEL)
 
 
 def print_usage():
-	print ('Usage:   ' + __file__ + ' <serial device>')
-	print ('Example: ' + __file__ + ' ttyUSB0')
+	print('Usage:   ' + __file__ + ' <serial device>')
+	print('Example: ' + __file__ + ' ttyUSB0')
 
 
 def parse_cmdline_args():

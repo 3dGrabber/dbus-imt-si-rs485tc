@@ -1,6 +1,6 @@
-VEDLIBDIR = ext/velib_python
+VEDLIBDIR = velib_python
 INSTALL_CMD = install
-LIBDIR = $(bindir)/ext/velib_python
+LIBDIR = $(bindir)/velib_python
 
 APP = dbus-imt-si-rs485tc.py
 
@@ -9,13 +9,13 @@ FILES = \
 	dbus-imt-si-rs485tc.py \
 	imt_si_rs485_modbus.py \
 	signals.py \
-	ve_dbus_service_async.py \
 	watchdog.py
 
 
 VEDLIB_FILES = \
 	$(VEDLIBDIR)/vedbus.py \
-	$(VEDLIBDIR)/ve_utils.py
+	$(VEDLIBDIR)/ve_utils.py \
+	$(VEDLIBDIR)/ve_dbus_service_async.py
 
 help:
 	@echo "The following make targets are available"

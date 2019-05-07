@@ -73,11 +73,11 @@ class ImtSiRs485Sensor(object):
 
 			reply = self.serial.read_input_registers(c.BASE_ADDRESS, c.NO_OF_REGISTERS, unit=c.SLAVE_ADDRESS)
 
-			if not hasattr(reply, 'function_code') or not hasattr(reply, 'registers'):
-				raise Exception('received an unexpected reply from sensor')
-
 			if reply.function_code > 0x80:
 				raise Exception('sensor signaled an error')
+
+			if not hasattr(reply, 'function_code') or not hasattr(reply, 'registers'):
+				raise Exception('received an unexpected reply from sensor')
 
 			if len(reply.registers) != c.NO_OF_REGISTERS:
 				raise Exception('received unexpected number of registers')

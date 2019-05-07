@@ -66,7 +66,7 @@ class ImtSiRs485Sensor(object):
 		# type: () -> (Sequence[int])
 
 		_log.debug(
-			'requesting modbus registers {0}-{1}'.format(c.SLAVE_ADDRESS, c.SLAVE_ADDRESS + c.NO_OF_REGISTERS - 1))
+			'requesting modbus registers {0}-{1}'.format(c.BASE_ADDRESS, c.BASE_ADDRESS + c.NO_OF_REGISTERS - 1))
 
 		try:
 			self.serial.connect()

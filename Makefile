@@ -7,7 +7,7 @@ APP = dbus-imt-si-rs485tc.py
 FILES = \
 	config.py \
 	dbus-imt-si-rs485tc.py \
-	imt_si_rs485_modbus.py \
+	imt_si_rs485_sensor.py \
 	signals.py \
 	watchdog.py
 

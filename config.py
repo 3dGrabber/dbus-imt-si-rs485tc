@@ -6,7 +6,7 @@ from signals import DbusSignal, ModbusSignal
 SERVICE_NAME = 'com.victronenergy.meteo'
 DRIVER_NAME = 'dbus-imt-si-rs485tc.py'
 
-LOG_LEVEL = logging.DEBUG
+LOG_LEVEL = logging.INFO
 UPDATE_INTERVAL = 2  # seconds
 
 # modbus configuration

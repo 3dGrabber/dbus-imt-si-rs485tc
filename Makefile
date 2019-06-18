@@ -9,6 +9,7 @@ FILES = \
 	dbus-imt-si-rs485tc.py \
 	imt_si_rs485_sensor.py \
 	signals.py \
+	ve_dbus_service_async.py \
 	watchdog.py
 
 
